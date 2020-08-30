@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="text">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>391</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_go">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>460</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_left">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mid">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>550</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Middle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_right">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>550</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>640</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="text2">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>40</y>
+      <width>441</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Command Log</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RC Car Sensing Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_go_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>550</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LeftSide</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_go_3">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>550</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Front</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_go_4">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>550</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RightSide</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_right</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>596</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mid</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedMid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>644</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedBack()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>694</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>707</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_left</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>563</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>51</x>
+     <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>clickedGo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>469</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_2</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>leftPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>609</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>656</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_2</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>leftRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>566</x>
+     <y>604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>662</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_3</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>frontPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>712</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>730</x>
+     <y>510</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_3</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>frontRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>685</x>
+     <y>617</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>731</x>
+     <y>685</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_4</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rightPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>800</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>852</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_go_4</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rightRelease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>781</x>
+     <y>596</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>849</x>
+     <y>643</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clickedGo()</slot>
+  <slot>clickedLeft()</slot>
+  <slot>clickedRight()</slot>
+  <slot>clickedBack()</slot>
+  <slot>clickedMid()</slot>
+  <slot>frontPress()</slot>
+  <slot>frontRelease()</slot>
+  <slot>leftPress()</slot>
+  <slot>leftRelease()</slot>
+  <slot>rightPress()</slot>
+  <slot>rightRelease()</slot>
+ </slots>
+</ui>
